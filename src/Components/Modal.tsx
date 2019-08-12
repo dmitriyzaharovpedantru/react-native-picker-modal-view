@@ -89,6 +89,7 @@ export class ModalComponent extends React.PureComponent<IModalProps, IModalState
 				<Modal
 					animationType={modalAnimationType}
 					visible={modalVisible}
+					supportedOrientations={['portrait', 'landscape']}
 					onRequestClose={() => onClosed}>
 					<SafeAreaView style={ModalStyles.container}>
 						<SearchComponent
